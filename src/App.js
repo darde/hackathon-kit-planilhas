@@ -53,8 +53,8 @@ function App() {
 
 
           <main role="main" className="col-md-9 ml-sm-auto col-lg-10 p-4">
-            <h2 className="pt-4 pb-3 px-1">1. Meta de vendas e crescimento esperado</h2>
-            <div className="card">
+            <h2 className="pt-4 pb-3 px-2">1. Meta de vendas e crescimento esperado</h2>
+            <div className="card shadow">
               <div className="card-body">
 
               <h4>Número de vendas no último ano</h4>
@@ -119,7 +119,7 @@ function App() {
 
             <div className="row">
               <div className="col-12 col-xl-6">
-                <div className="card">
+                <div className="card shadow">
                   <div className="card-body">
                     <h6 class="text-muted mb-2">
                       No último ano, sua média de crescimento foi de
@@ -131,7 +131,7 @@ function App() {
                 </div>
               </div>
               <div className="col-12 col-xl-6">
-                <div className="card">
+                <div className="card shadow">
                   <div className="card-body">
                     <h6 class="text-muted mb-2">
                       Para o próximo ano, você quer crescer ao mês:
@@ -155,7 +155,7 @@ function App() {
 
 
 
-            <div className="card">
+            <div className="card shadow">
             <div className="card-header">
               <h4 className="card-header-title">Assim, sua projeção de vendas é:</h4>
             </div>
@@ -197,21 +197,16 @@ function App() {
             </div>
             </div>
 
-            <h2 className="pt-4 pb-3 px-1">2. Cálculo de Margem para orçamento de Marketing Digital</h2>
-            <div className="card">
-              <div className="card-body">
-                <p>Nessa parte, você vai colocar os dados de receitas e despesas da sua empresa em um determinado período para chegar a um valor de Marketing por produto vendido. Esse valor servirá como base para determinar o orçamento.</p>
-              </div>
-            </div>
+            <h2 className="pt-4 pb-3 px-2">2. Cálculo de Margem para orçamento de Marketing Digital</h2>
+            <p className="px-2 pb-3">Nessa parte, você vai colocar os dados de receitas e despesas da sua empresa em um determinado período para chegar a um valor de Marketing por produto vendido. Esse valor servirá como base para determinar o orçamento.</p>
+
 
             <div className="row">
               <div className="col-12 col-xl-6">
-                <div className="card">
-                  <div className="card-header">
-                    <h4 className="card-header-title">Receita</h4>
-                  </div>
+                <div className="card shadow">
                   <div className="card-body">
-                    <form>
+                    <h4 className="pb-3">Receita</h4>
+                    <form className="mb-n3">
                       <div class="form-group row">
                         <label for="inputRec3" class="col-sm-7 col-form-label">Número de vendas da empresa</label>
                         <div class="col-sm-5">
@@ -234,13 +229,16 @@ function App() {
                 </div>
               </div>
               <div className="col-12 col-xl-6">
-                <div className="card">
-                  <div className="card-header">
-                    <h4 className="card-header-title">Despesa</h4>
-                  </div>
+                <div className="card shadow">
                   <div className="card-body">
+                    <h4 className="pb-3">Despesa</h4>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="card shadow">
+              <div className="card-body">
               </div>
             </div>
 
