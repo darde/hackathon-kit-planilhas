@@ -10,13 +10,50 @@ function App() {
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col col-sm-3">
-            <h1>1. Meta de vendas e crescimento esperado</h1>
-            <p>Insira, para todos os meses, o número de vendas do último ano.</p>
-          </div>
-          <div className="col col-sm-9">
+
+          <nav className="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ol class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    1. Meta de vendas e crescimento esperado <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    2. Cálculo de Margem para orçamento de Marketing Digital
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    3. Orçamento para Marketing
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    4. Diagnóstico para Marketing
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    5. Definição de necessidades, ações e projetos
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    6. Orçamento detalhado de Marketing
+                  </a>
+                </li>
+              </ol>
+
+            </div>
+
+          </nav>
+
+
+          <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-4">
             <h2>Número de vendas no último ano</h2>
-            <p>* preencha todos os meses e para os não realizados ainda, coloque a expectativa</p>
+            <p>Insira, para todos os meses*, o número de vendas do último ano.</p>
             <form>
               <div className="form-row">
                 <div className="form-group col-sm-2">
@@ -71,6 +108,7 @@ function App() {
                 </div>
               </div>
             </form>
+            <small class="text-muted">* preencha todos os meses e para os não realizados ainda, coloque a expectativa</small>
             <hr />
             <p>No último ano, sua média de crescimento foi de <strong>3,56</strong>  %</p>
             <form class="form-inline">
@@ -118,10 +156,12 @@ function App() {
                 </tr>
               </tbody>
             </table>
-          </div>
+
+          </main>
+
+
         </div>
       </div>
-
     </div>
   );
 }
