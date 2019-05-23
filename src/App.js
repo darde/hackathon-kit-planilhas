@@ -57,7 +57,7 @@ function App() {
             <div className="card">
               <div className="card-body">
 
-              <h2>Número de vendas no último ano</h2>
+              <h4>Número de vendas no último ano</h4>
               <p>Insira, para todos os meses*, o número de vendas do último ano.</p>
               <form>
                 <div className="form-row">
@@ -117,25 +117,50 @@ function App() {
             </div>
             </div>
 
-            <div className="card">
-            <div className="card-body">
-              <p>No último ano, sua média de crescimento foi de <strong>3,56</strong>  %</p>
-              <form class="form-inline">
-                <div class="form-group">
-                  <label for="inputperc2">Para o próximo ano, você quer crescer ao mês:</label>
-                  <input value="3,54 %" type="text" id="inputperc2" class="form-control mx-sm-3" aria-describedby="prevperc" />
-                  <small id="prevperc" class="text-muted">
-                    altere caso ache viável/necessário
-                  </small>
+            <div className="row">
+              <div className="col-12 col-xl-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6 class="text-muted mb-2">
+                      No último ano, sua média de crescimento foi de
+                    </h6>
+                    <span class="h2 mb-0">
+                      763.5 <small>%</small>
+                    </span>
+                  </div>
                 </div>
-              </form>
-            </div>
+              </div>
+              <div className="col-12 col-xl-6">
+                <div className="card">
+                  <div className="card-body">
+                    <h6 class="text-muted mb-2">
+                      Para o próximo ano, você quer crescer ao mês:
+                    </h6>
+                    <span class="h2 mb-0">
+                      763.5 <small>%</small>
+                    </span>
+                    <small id="prevperc" class="text-muted mx-sm-3">
+                       altere caso ache viável/necessário
+                    </small>
+                    <form class="form-inline sr-only">
+                      <div class="form-group">
+                        <input value="3,54 %" type="text" id="inputperc2" class="form-control mx-sm-3" aria-describedby="prevperc" />
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
 
+
+
             <div className="card">
-            <div className="card-body">
-              <h3>Assim, sua projeção de vendas é:</h3>
-              <table class="table table-bordered">
+            <div className="card-header">
+              <h4 className="card-header-title">Assim, sua projeção de vendas é:</h4>
+            </div>
+            <div className="card-table">
+              <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">Jan</th>
