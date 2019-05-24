@@ -375,6 +375,14 @@ function App() {
 
                 </div>
               </div>
+              <hr />
+              <h3> Compartilhe a ferramenta nas redes sociais</h3>
+              <p>Quanto mais empresas preencherem o diagnóstico, melhor e mais confiável ficará o seu relatório.</p>
+              <p class="social-media">
+                <a href="" class="btn btn-primary mr-2"><i class="fa fa-facebook"></i> Facebook</a>
+                <a href="" class="btn btn-primary mr-2"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="" class="btn btn-primary mr-2"><i class="fa fa-linkedin"></i> LinkedIn</a>
+              </p>
 
           </main>
         </div>
