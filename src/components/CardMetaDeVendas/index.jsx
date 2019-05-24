@@ -37,6 +37,30 @@ class CardMetaDeVendas extends React.Component {
     ],
   };
 
+  getMonthProjection(monthProjection) {
+    const { months, forecastGrowth, monthsProjection } = this.state;
+
+    if (monthProjection === 'Jan') {
+      monthsProjection.find(item => {
+        if (item.label === 'Jan') {
+          item.value = parseInt(months[10].value + months[10].value * forecastGrowth);
+        }
+      })
+      
+      return monthsProjection.find(item => item.label === 'Jan').value;
+    } else {
+      const monthProjectionObject = monthsProjection.find(item => item.label === monthProjection);
+      const monthProjectionIndex = monthsProjection.indexOf(monthProjectionObject);
+      console.log('index: ', monthProjectionIndex - 1);
+      monthsProjection.find(item => {
+        if (item === monthProjection) {
+          item.value = parseInt(months[monthProjectionIndex - 1].value + months[monthProjectionIndex -1].value * forecastGrowth);
+        }
+      })
+      return 333;
+    }
+  }
+
   handleOnChange = (e) => {
     if (e.target.value < 0) {
       return;
@@ -67,7 +91,7 @@ class CardMetaDeVendas extends React.Component {
 
   render() {
     const { averageGrowth, months, forecastGrowth } = this.state;
-    console.log(averageGrowth);
+
     return (
       <React.Fragment>
         <h2 className="pt-4 pb-3 px-1">1. Meta de vendas e crescimento esperado</h2>
@@ -178,18 +202,18 @@ class CardMetaDeVendas extends React.Component {
               </thead>
               <tbody>
                 <tr>
-                  <td>{months[10].value + months[10].value * forecastGrowth}</td>
-                  <td>{}</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
+                  <td>{this.getMonthProjection('Jan')}</td>
+                  <td>{this.getMonthProjection('Fev')}</td>
+                  <td>{this.getMonthProjection('Mar')}</td>
+                  <td>{this.getMonthProjection('Abr')}</td>
+                  <td>{this.getMonthProjection('Mai')}</td>
+                  <td>{this.getMonthProjection('Jun')}</td>
+                  <td>{this.getMonthProjection('Jul')}</td>
+                  <td>{this.getMonthProjection('Ago')}</td>
+                  <td>{this.getMonthProjection('Set')}</td>
+                  <td>{this.getMonthProjection('Out')}</td>
+                  <td>{this.getMonthProjection('Nov')}</td>
+                  <td>{this.getMonthProjection('Dez')}</td>
                 </tr>
               </tbody>
             </table>
