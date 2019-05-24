@@ -305,6 +305,74 @@ function App() {
 
               <div className="card shadow">
                 <div className="card-body">
+
+                  <table className="table table-sm small m-0">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Jan</th>
+                        <th scope="col">Fev</th>
+                        <th scope="col">Mar</th>
+                        <th scope="col">Abr</th>
+                        <th scope="col">Mai</th>
+                        <th scope="col">Jun</th>
+                        <th scope="col">Jul</th>
+                        <th scope="col">Ago</th>
+                        <th scope="col">Set</th>
+                        <th scope="col">Out</th>
+                        <th scope="col">Nov</th>
+                        <th scope="col">Dez</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Total indicado pela diretoria</th>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Total estimado pelo Marketing</th>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pessoal</th>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                        <td>R$ 0,00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
                 </div>
               </div>
 
