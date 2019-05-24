@@ -137,11 +137,15 @@ a {
 }
 
 .nav-item .nav-link.active {
-  color: #f9fbfd;
+  /* color: #f9fbfd; */
+  color: rgba(255,255,255,0.75);
 }
 .nav-item .nav-link {
   color: #6e84a3;
 }
 .nav-item .nav-link:hover {
   color: #12263f;
+}
+.nav-item .nav-link.active:hover {
+  color: rgba(255,255,255,0.95);
 }
