@@ -395,6 +395,9 @@ function App() {
                         <a href="" class="btn btn-primary mr-2"><i class="fa fa-linkedin"></i> LinkedIn</a>
                       </p>
 
+                      <hr />
+                      <p className="small text-muted">Feito com ♥ pelo time da Resultados Digitais</p>
+
                     </main>
 
 
