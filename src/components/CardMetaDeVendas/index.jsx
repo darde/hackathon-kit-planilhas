@@ -1,7 +1,13 @@
 import React from 'react';
 
-const getAverageGrowth = months =>
-  Math.round(((Math.pow((months[10].value / months[0].value), (1 / 12)) - 1) * 100) * 100) / 100;
+const getAverageGrowth = months => 
+  Math.pow((months[10].value / months[0].value), (1 / 12)) - 1
+
+const getAverageGrowthFormatted = months =>
+  getNumberFormatted(getAverageGrowth(months));
+  
+const getNumberFormatted = num =>
+  Math.round((num * 100) * 100) / 100;
 
 class CardMetaDeVendas extends React.Component {
   state = {
@@ -37,6 +43,31 @@ class CardMetaDeVendas extends React.Component {
     ],
   };
 
+  getMonthProjection(monthProjection) {
+    const { months, forecastGrowth, monthsProjection } = this.state;
+
+    if (monthProjection === 'Jan') {
+      monthsProjection.find(item => {
+        if (item.label === 'Jan') {
+          item.value = parseInt(months[10].value + months[10].value * forecastGrowth);
+        }
+      });
+      
+      return monthsProjection.find(item => item.label === 'Jan').value;
+    } else {
+      const monthProjectionObject = monthsProjection.find(item => item.label === monthProjection);
+      const monthProjectionIndex = monthsProjection.indexOf(monthProjectionObject);
+      monthsProjection.find(item => {
+        if (item.label === monthProjection) {
+          item.value = parseInt(monthsProjection[monthProjectionIndex - 1].value + monthsProjection[monthProjectionIndex -1].value * forecastGrowth);
+          console.log('value: ', item.value);
+        }
+      });
+
+      return monthsProjection.find(item => item.label === monthProjection).value;
+    }
+  }
+
   handleOnChange = (e) => {
     if (e.target.value < 0) {
       return;
@@ -52,22 +83,20 @@ class CardMetaDeVendas extends React.Component {
       return true;
     });
 
-    const averageGrowth = getAverageGrowth(newMonths);
+    const averageGrowth = getAverageGrowthFormatted(newMonths);
 
     this.setState({
       months: newMonths.slice(),
       averageGrowth:
         averageGrowth > 0 && averageGrowth !== Infinity
           ? averageGrowth : "",
-      forecastGrowth:
-        averageGrowth > 0 && averageGrowth !== Infinity
-          ? averageGrowth : "",
+      forecastGrowth: getAverageGrowth(this.state.months),
     });
   };
 
   render() {
     const { averageGrowth, months, forecastGrowth } = this.state;
-    console.log(averageGrowth);
+
     return (
       <React.Fragment>
         <h2 className="mt-4 mb-3 mx-0 p-0">
@@ -123,7 +152,7 @@ class CardMetaDeVendas extends React.Component {
                 <div className="form-inline">
                   <div class="form-group">
                     <input
-                      value={forecastGrowth > 0 && `${forecastGrowth}%`}
+                      value={forecastGrowth > 0 && `${getNumberFormatted(forecastGrowth)}%`}
                       type="text"
                       id="inputperc2"
                       className="form-control mr-sm-3"
@@ -164,18 +193,18 @@ class CardMetaDeVendas extends React.Component {
               </thead>
               <tbody>
                 <tr>
-                  <td>{months[10].value + months[10].value * forecastGrowth}</td>
-                  <td>{}</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
-                  <td>321,00</td>
+                  <td>{this.getMonthProjection('Jan')}</td>
+                  <td>{this.getMonthProjection('Fev')}</td>
+                  <td>{this.getMonthProjection('Mar')}</td>
+                  <td>{this.getMonthProjection('Abr')}</td>
+                  <td>{this.getMonthProjection('Mai')}</td>
+                  <td>{this.getMonthProjection('Jun')}</td>
+                  <td>{this.getMonthProjection('Jul')}</td>
+                  <td>{this.getMonthProjection('Ago')}</td>
+                  <td>{this.getMonthProjection('Set')}</td>
+                  <td>{this.getMonthProjection('Out')}</td>
+                  <td>{this.getMonthProjection('Nov')}</td>
+                  <td>{this.getMonthProjection('Dez')}</td>
                 </tr>
               </tbody>
             </table>
