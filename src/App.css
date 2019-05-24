@@ -21,22 +21,28 @@ a {
 }
 
 .sidebar {
-  position: fixed;
-  top: 188px;
+  /* position: fixed; */
+  /* top: 188px; */
+  position: relative;
 }
 .jumbotron-sticky {
   position: fixed;
   width: 100%;
   z-index: 1;
 }
+#main-container {
+  padding-top: 168px;
+  height: 100%
+}
+#main-container > .row,
+#main-container > .row > [class^='col-'] {
+  height: 100%;
+}
 
 [role="main"] {
-  padding-top: 168px !important;
-}
-@media (min-width: 768px) {
-  [role="main"] {
-    padding-top: 60px;
-  }
+  position: relative;
+  height: 100%;
+  overflow: auto;
 }
 
 .card {

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const getAverageGrowth = months => 
+const getAverageGrowth = months =>
   Math.pow((months[10].value / months[0].value), (1 / 12)) - 1
 
 const getAverageGrowthFormatted = months =>
   getNumberFormatted(getAverageGrowth(months));
-  
+
 const getNumberFormatted = num =>
   Math.round((num * 100) * 100) / 100;
 
@@ -52,7 +52,7 @@ class CardMetaDeVendas extends React.Component {
           item.value = parseInt(months[10].value + months[10].value * forecastGrowth);
         }
       });
-      
+
       return monthsProjection.find(item => item.label === 'Jan').value;
     } else {
       const monthProjectionObject = monthsProjection.find(item => item.label === monthProjection);
@@ -98,8 +98,8 @@ class CardMetaDeVendas extends React.Component {
     const { averageGrowth, months, forecastGrowth } = this.state;
 
     return (
-      <React.Fragment>
-        <h2 className="mt-4 mb-3 mx-0 p-0">
+      <div id="part1">
+        <h2 className="pt-5 pb-3 px-1 m-0">
           <span className="number-title number-title-1">1</span> Meta de vendas e crescimento esperado
         </h2>
 
@@ -210,7 +210,7 @@ class CardMetaDeVendas extends React.Component {
             </table>
           </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

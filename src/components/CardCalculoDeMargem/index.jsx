@@ -1,8 +1,8 @@
 import React from 'react';
 
 const CardCalculoDeMargem = () => (
-  <React.Fragment>
-    <h2 className="mt-5 mb-3 mx-0 p-0">
+  <div id="part2">
+    <h2 className="pt-5 pb-3 px-1 m-0">
       <span className="number-title number-title-2">2</span> Cálculo de Margem para orçamento de Marketing Digital
     </h2>
     <p className="px-2 pb-3">Nessa parte, você vai colocar os dados de receitas e despesas da sua empresa em um determinado período para chegar a um valor de Marketing por produto vendido. Esse valor servirá como base para determinar o orçamento.</p>
@@ -135,7 +135,7 @@ const CardCalculoDeMargem = () => (
 
       </div>
     </div>
-  </React.Fragment>
+  </div>
 );
 
 export default CardCalculoDeMargem;
