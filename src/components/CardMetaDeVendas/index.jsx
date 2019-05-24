@@ -1,7 +1,13 @@
 import React from 'react';
 
-const getAverageGrowth = months =>
-  Math.round(((Math.pow((months[10].value / months[0].value), (1 / 12)) - 1) * 100) * 100) / 100;
+const getAverageGrowth = months => 
+  Math.pow((months[10].value / months[0].value), (1 / 12)) - 1
+
+const getAverageGrowthFormatted = months =>
+  getNumberFormatted(getAverageGrowth(months));
+  
+const getNumberFormatted = num =>
+  Math.round((num * 100) * 100) / 100;
 
 class CardMetaDeVendas extends React.Component {
   state = {
@@ -45,19 +51,20 @@ class CardMetaDeVendas extends React.Component {
         if (item.label === 'Jan') {
           item.value = parseInt(months[10].value + months[10].value * forecastGrowth);
         }
-      })
+      });
       
       return monthsProjection.find(item => item.label === 'Jan').value;
     } else {
       const monthProjectionObject = monthsProjection.find(item => item.label === monthProjection);
       const monthProjectionIndex = monthsProjection.indexOf(monthProjectionObject);
-      console.log('index: ', monthProjectionIndex - 1);
       monthsProjection.find(item => {
-        if (item === monthProjection) {
-          item.value = parseInt(months[monthProjectionIndex - 1].value + months[monthProjectionIndex -1].value * forecastGrowth);
+        if (item.label === monthProjection) {
+          item.value = parseInt(monthsProjection[monthProjectionIndex - 1].value + monthsProjection[monthProjectionIndex -1].value * forecastGrowth);
+          console.log('value: ', item.value);
         }
-      })
-      return 333;
+      });
+
+      return monthsProjection.find(item => item.label === monthProjection).value;
     }
   }
 
@@ -76,16 +83,14 @@ class CardMetaDeVendas extends React.Component {
       return true;
     });
 
-    const averageGrowth = getAverageGrowth(newMonths);
+    const averageGrowth = getAverageGrowthFormatted(newMonths);
 
     this.setState({
       months: newMonths.slice(),
       averageGrowth:
         averageGrowth > 0 && averageGrowth !== Infinity
           ? averageGrowth : "",
-      forecastGrowth:
-        averageGrowth > 0 && averageGrowth !== Infinity
-          ? averageGrowth : "",
+      forecastGrowth: getAverageGrowth(this.state.months),
     });
   };
 
@@ -147,7 +152,7 @@ class CardMetaDeVendas extends React.Component {
                 <div className="form-inline">
                   <div class="form-group">
                     <input
-                      value={forecastGrowth > 0 && `${forecastGrowth}%`}
+                      value={forecastGrowth > 0 && `${getNumberFormatted(forecastGrowth)}%`}
                       type="text"
                       id="inputperc2"
                       className="form-control mr-sm-3"
