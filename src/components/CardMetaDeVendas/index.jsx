@@ -70,32 +70,19 @@ class CardMetaDeVendas extends React.Component {
     console.log(averageGrowth);
     return (
       <React.Fragment>
-        <h2 className="pt-4 pb-3 px-1">1. Meta de vendas e crescimento esperado</h2>
-        <div className="card">
+        <h2 className="mt-4 mb-3 mx-0 p-0">
+          <span className="number-title number-title-1">1</span> Meta de vendas e crescimento esperado
+        </h2>
+
+        <div className="card shadow">
           <div className="card-body">
             <h4>Número de vendas no último ano</h4>
             <p>Insira, para todos os meses*, o número de vendas do último ano.</p>
             <form>
               <div className="form-row" id="months">
                 {
-                  months.slice(0,6).map(month => (
-                    <div className="form-group col-sm-2" key={month.label}>
-                      <label htmlFor={month.label}>{month.label}</label>
-                      <input
-                        type="number"
-                        className="form-control"
-                        id={month.label}
-                        value={month.value}
-                        onChange={this.handleOnChange}
-                      />
-                    </div>    
-                  ))
-                }
-              </div>
-              <div className="form-row">
-                {
-                  months.slice(6).map(month => (
-                    <div className="form-group col-sm-2" key={month.label}>
+                  months.map(month => (
+                    <div className="form-group col-sm-1" key={month.label}>
                       <label htmlFor={month.label}>{month.label}</label>
                       <input
                         type="number"
@@ -112,9 +99,11 @@ class CardMetaDeVendas extends React.Component {
             <small className="text-muted">* preencha todos os meses e para os não realizados ainda, coloque a expectativa</small>
           </div>
         </div>
+
         <div className="row">
           <div className="col-12 col-xl-6">
-            <div className="card">
+
+            <div className="card shadow">
               <div className="card-body">
                 <h6 className="text-muted mb-2">No último ano, sua média de crescimento foi de</h6>
                 <span className="h2 mb-0">
@@ -122,38 +111,35 @@ class CardMetaDeVendas extends React.Component {
                 </span>
               </div>
             </div>
+
           </div>
           <div className="col-12 col-xl-6">
-            <div className="card">
+
+            <div className="card shadow">
               <div className="card-body">
                 <h6 className="text-muted mb-2">
                   Para o próximo ano, você quer crescer ao mês:
-                    </h6>
-                <input
-                  value={forecastGrowth > 0 && `${forecastGrowth}%`}
-                  type="text"
-                  id="inputperc2"
-                  className="form-control mx-sm-2"
-                  aria-describedby="prevperc"
-                />
-                <small id="prevperc" className="text-muted mx-sm-3">
-                  altere caso ache viável/necessário
-                    </small>
-                <form className="form-inline sr-only">
-                  <div className="form-group">
+                </h6>
+                <div className="form-inline">
+                  <div class="form-group">
                     <input
-                      value="3,54 %"
+                      value={forecastGrowth > 0 && `${forecastGrowth}%`}
                       type="text"
                       id="inputperc2"
-                      className="form-control mx-sm-3"
+                      className="form-control mr-sm-3"
                       aria-describedby="prevperc"
                     />
+                    <small id="prevperc" className="text-muted">
+                      altere caso ache viável/necessário
+                    </small>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
+
         <div className="card">
           <div className="card-header">
             <h4 className="card-header-title">Assim, sua projeção de vendas é:</h4>
