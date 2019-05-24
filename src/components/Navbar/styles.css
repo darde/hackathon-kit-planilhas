@@ -1,12 +1,12 @@
 .nav-bar {
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
   padding-left: 20px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 960px;
-  height: 50px;
-  background: #384654;
+  margin: 0 auto 20px;
+  width: 100%; */
+  /* max-width: 960px; */
+  /* height: 40px;
+  background: #384654; */
 }
 
 .nav-bar-logo {
