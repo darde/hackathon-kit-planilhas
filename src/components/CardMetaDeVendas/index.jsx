@@ -140,7 +140,7 @@ class CardMetaDeVendas extends React.Component {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card shadow">
           <div className="card-header">
             <h4 className="card-header-title">Assim, sua projeção de vendas é:</h4>
           </div>

@@ -31,17 +31,56 @@ function App() {
               <h2 className="mt-5 mb-3 mx-0 p-0">
                 <span className="number-title number-title-3">3</span> Orçamento para Marketing
               </h2>
-              <p className="px-2 pb-3">
-                Esta parte só vai funcionar se você tiver preenchido as abas de "Cálculo de margem" e "Metas e crescimento esperados"
-              </p>
 
-              <div className="card shadow">
-                <div className="card-body">
+              <div className="row">
+                <div className="col-12 col-xl-6">
+                  <p className="px-2 pb-3">
+                    Esta parte só vai funcionar se você tiver preenchido as abas de "Cálculo de margem" e "Metas e crescimento esperados"
+                  </p>
+                </div>
+                <div className="col-12 col-xl-6">
+                  <div className="card shadow">
+                    <div className="card-body">
+                      <h6 className="text-muted mb-2">
+                        Orçamento anual:
+                      </h6>
+                      <div className="form-inline">
+                        <div class="form-group">
+                          <input
+                            value={''}
+                            type="text"
+                            id=""
+                            className="form-control mr-sm-3"
+                            aria-describedby="prevperc"
+                            />
+                          <small id="" className="text-muted">
+
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
 
-              <div className="card shadow">
-                <div className="card-body">
+              <div class="card shadow">
+                <div class="card-header">
+                  <h4 class="card-header-title">Orçamento mês a mês</h4>
+                </div>
+                <div class="card-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Jan</th><th scope="col">Fev</th><th scope="col">Mar</th><th scope="col">Abr</th><th scope="col">Mai</th><th scope="col">Jun</th><th scope="col">Jul</th><th scope="col">Ago</th><th scope="col">Set</th><th scope="col">Out</th><th scope="col">Nov</th><th scope="col">Dez</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td><td></td><td>321,00</td><td>321,00</td><td>321,00</td><td>321,00</td><td>321,00</td><td>321,00</td><td>321,00</td><td>321,00</td><td>321,00</td><td>321,00</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
