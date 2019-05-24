@@ -23,36 +23,36 @@ function App() {
         <div className="row">
 
           <nav className="col-md-2 d-none d-md-block sidebar">
-            <div class="sidebar-sticky">
-              <ol class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">
-                    1. Meta de vendas e crescimento esperado <span class="sr-only">(current)</span>
+            <div className="sidebar-sticky">
+              <ol className="nav flex-column">
+                <li className="nav-item">
+                  <a className="nav-link active" href="#">
+                    <span className="number-link-1">1. Meta de vendas e crescimento esperado</span> <span className="sr-only">(current)</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    2. Cálculo de Margem para orçamento de Marketing Digital
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <span className="number-link-2">2. Cálculo de Margem para orçamento de Marketing Digital</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    3. Orçamento para Marketing
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <span className="number-link-3">3. Orçamento para Marketing</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    4. Diagnóstico para Marketing
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <span className="number-link-4">4. Diagnóstico para Marketing</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    5. Definição de necessidades, ações e projetos
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <span className="number-link-5">5. Definição de necessidades, ações e projetos</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    6. Orçamento detalhado de Marketing
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <span className="number-link-6">6. Orçamento detalhado de Marketing</span>
                   </a>
                 </li>
               </ol>
@@ -63,7 +63,9 @@ function App() {
 
 
           <main role="main" className="col-md-9 ml-sm-auto col-lg-10 p-4">
-            <h2 className="pt-4 pb-3 px-2">1. Meta de vendas e crescimento esperado</h2>
+            <h2 className="mt-4 mb-3 mx-0 p-0">
+              <span className="number-title number-title-1">1</span> Meta de vendas e crescimento esperado
+            </h2>
             <div className="card shadow">
               <div className="card-body">
 
@@ -207,7 +209,9 @@ function App() {
             </div>
             </div>
 
-            <h2 className="pt-4 pb-3 px-2">2. Cálculo de Margem para orçamento de Marketing Digital</h2>
+            <h2 className="mt-5 mb-3 mx-0 p-0">
+              <span className="number-title number-title-2">2</span> Cálculo de Margem para orçamento de Marketing Digital
+            </h2>
             <p className="px-2 pb-3">Nessa parte, você vai colocar os dados de receitas e despesas da sua empresa em um determinado período para chegar a um valor de Marketing por produto vendido. Esse valor servirá como base para determinar o orçamento.</p>
 
 
@@ -246,6 +250,47 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className="card shadow">
+              <div className="card-body">
+              </div>
+            </div>
+
+            // area 3
+
+            <h2 className="mt-5 mb-3 mx-0 p-0">
+              <span className="number-title number-title-3">3</span> Orçamento para Marketing
+            </h2>
+
+            <div className="card shadow">
+              <div className="card-body">
+              </div>
+            </div>
+
+
+            <h2 className="mt-5 mb-3 mx-0 p-0">
+              <span className="number-title number-title-4">4</span> Diagnóstico para Marketing
+            </h2>
+
+            <div className="card shadow">
+              <div className="card-body">
+              </div>
+            </div>
+
+
+            <h2 className="mt-5 mb-3 mx-0 p-0">
+              <span className="number-title number-title-5">5</span> Definição de necessidades, ações e projetos
+            </h2>
+
+            <div className="card shadow">
+              <div className="card-body">
+              </div>
+            </div>
+
+
+            <h2 className="mt-5 mb-3 mx-0 p-0">
+              <span className="number-title number-title-6">6</span> Orçamento detalhado de Marketing
+            </h2>
 
             <div className="card shadow">
               <div className="card-body">
