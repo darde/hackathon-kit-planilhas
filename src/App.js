@@ -184,13 +184,117 @@ function App() {
               </div>
 
 
-
               <h2 className="mt-5 mb-3 mx-0 p-0">
                 <span className="number-title number-title-5">5</span> Definição de necessidades, ações e projetos
               </h2>
+              <div className="row">
+                <div className="col-12 col-xl-4">
+                  <p className="px-2 pb-3">Trace aqui as ações que considerar necessárias de acordo com o seu diagnóstico e planejamento.</p>
+                </div>
+                <div className="col-12 col-xl-6">
+                  <p className="px-2 pb-3">Boa parte das ações indicadas já vem com uma sugestão de orçamento que é geral e baseada em pesquisas. Altere caso considere necessário ao seu caso:</p>
+                </div>
+              </div>
 
               <div className="card shadow">
                 <div className="card-body">
+
+                  <h4 className="mb-4">Ações recorrentes</h4>
+
+                  <h6>Produção de 4 posts para o blog</h6>
+                  <div className="form-row ml-2">
+                    <div className="col">
+                      <label for="">Quantas vezes /mês</label>
+                      <select id="" className="form-control">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <label for="">Quem faz?</label>
+                      <select id="" className="form-control">
+                        <option selected>in house</option>
+                        <option>terceirizado</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <label for="">Quando começa?</label>
+                      <select id="" className="form-control">
+                        <option selected>Janeiro</option>
+                        <option>Fevereiro</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <label for="">Custo unitário</label>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">R$</div>
+                        </div>
+                        <input type="text" className="form-control text-right" id="" placeholder="0,00" />
+                      </div>
+                    </div>
+                    <div className="col">
+                      <label for="">Custo estimado</label>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">R$</div>
+                        </div>
+                        <input type="text" className="form-control text-right" id="" placeholder="0,00" disabled="disabled" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <h6 className="mt-4">Gestão de mídias sociais (publicações + monitoramento 1x dia)</h6>
+                  <div className="form-row ml-2">
+                    <div className="col">
+                      <label for="">Quantas vezes /mês</label>
+                      <select id="" className="form-control">
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <label for="">Quem faz?</label>
+                      <select id="" className="form-control">
+                        <option selected>in house</option>
+                        <option>terceirizado</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <label for="">Quando começa?</label>
+                      <select id="" className="form-control">
+                        <option selected>Janeiro</option>
+                        <option>Fevereiro</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <label for="">Custo unitário</label>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">R$</div>
+                        </div>
+                        <input type="text" className="form-control text-right" id="" placeholder="0,00" />
+                      </div>
+                    </div>
+                    <div className="col">
+                      <label for="">Custo estimado</label>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">R$</div>
+                        </div>
+                        <input type="text" className="form-control text-right" id="" placeholder="0,00" disabled="disabled" />
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
 
