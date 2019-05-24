@@ -28,7 +28,7 @@ function App() {
             <CardMetaDeVendas />
             <CardCalculoDeMargem />
 
-              <h2 className="mt-5 mb-3 mx-0 p-0">
+              <h2 className="mt-5 mb-4 mx-0 p-0">
                 <span className="number-title number-title-3">3</span> Orçamento para Marketing
               </h2>
 
@@ -53,9 +53,6 @@ function App() {
                             className="form-control mr-sm-3"
                             aria-describedby="prevperc"
                             />
-                          <small id="" className="text-muted">
-
-                          </small>
                         </div>
                       </div>
                     </div>
@@ -85,14 +82,107 @@ function App() {
               </div>
 
 
-              <h2 className="mt-5 mb-3 mx-0 p-0">
+              <h2 className="mt-5 mb-4 mx-0 p-0">
                 <span className="number-title number-title-4">4</span> Diagnóstico para Marketing
               </h2>
 
-              <div className="card shadow">
-                <div className="card-body">
+              <div className="row">
+                <div className="col-12 col-xl-4">
+                  <p className="px-2 pb-3">Liste aqui quais você acredita que são os maiores objetivos e oportunidades de Marketing Digital para sua empresa.</p>
+                  <p className="px-2 pb-3 text-muted">Para fazer o diagnóstico de Marketing e identificar as maiores oportunidades para sua empresa, consulte:</p>
+                  <ul className="mb-0">
+                    <li>
+                      <a target="_blank" href="http://ferramentas.resultadosdigitais.com.br/funil-de-vendas/">
+                        Benchmarking do Funil de Vendas
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="http://ferramentas.resultadosdigitais.com.br/diagnostico-marketing-vendas/">
+                        Diagnóstico de Marketing e Vendas
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="http://www.raioxdomarketing.com.br/">
+                        Raio-X do Marketing
+                      </a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="http://ferramentas.resultadosdigitais.com.br/diagnostico-cac/">
+                        Diagnóstico de CAC
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+                <div className="col-12 col-xl-8">
+                  <div className="card shadow">
+                    <div className="card-body">
+                      <h4 className="mb-3">Objetivos para o ano</h4>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">1.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal1" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">2.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal2" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">3.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal3" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">4.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal4" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">5.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal5" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">6.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal6" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">7.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal7" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">8.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal8" />
+                      </div>
+                      <div className="input-group mb-3">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">9.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal9" />
+                      </div>
+                      <div className="input-group">
+                        <div className="input-group-prepend">
+                          <div className="input-group-text">10.</div>
+                        </div>
+                        <input type="text" className="form-control" id="goal10" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
 
 
               <h2 className="mt-5 mb-3 mx-0 p-0">
