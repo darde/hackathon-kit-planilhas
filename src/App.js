@@ -27,6 +27,54 @@ function App() {
           <main role="main" className="col-md-9 ml-sm-auto col-lg-10 p-4">
             <CardMetaDeVendas />
             <CardCalculoDeMargem />
+
+              <h2 className="mt-5 mb-3 mx-0 p-0">
+                <span className="number-title number-title-3">3</span> Orçamento para Marketing
+              </h2>
+              <p className="px-2 pb-3">
+                Esta parte só vai funcionar se você tiver preenchido as abas de "Cálculo de margem" e "Metas e crescimento esperados"
+              </p>
+
+              <div className="card shadow">
+                <div className="card-body">
+                </div>
+              </div>
+
+              <div className="card shadow">
+                <div className="card-body">
+                </div>
+              </div>
+
+
+              <h2 className="mt-5 mb-3 mx-0 p-0">
+                <span className="number-title number-title-4">4</span> Diagnóstico para Marketing
+              </h2>
+
+              <div className="card shadow">
+                <div className="card-body">
+                </div>
+              </div>
+
+
+              <h2 className="mt-5 mb-3 mx-0 p-0">
+                <span className="number-title number-title-5">5</span> Definição de necessidades, ações e projetos
+              </h2>
+
+              <div className="card shadow">
+                <div className="card-body">
+                </div>
+              </div>
+
+
+              <h2 className="mt-5 mb-3 mx-0 p-0">
+                <span className="number-title number-title-6">6</span> Orçamento detalhado de Marketing
+              </h2>
+
+              <div className="card shadow">
+                <div className="card-body">
+                </div>
+              </div>
+
           </main>
         </div>
       </div>
