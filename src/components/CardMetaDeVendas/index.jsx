@@ -103,9 +103,9 @@ class CardMetaDeVendas extends React.Component {
         <div className="row">
           <div className="col-12 col-xl-6">
 
-            <div className="card shadow">
+            <div className="card card-bg-gradient shadow">
               <div className="card-body">
-                <h6 className="text-muted mb-2">No último ano, sua média de crescimento foi de</h6>
+                <h6 className="mb-2">No último ano, sua média de crescimento foi de</h6>
                 <span className="h2 mb-0">
                   { averageGrowth > 0 && `${averageGrowth}%` }
                 </span>
