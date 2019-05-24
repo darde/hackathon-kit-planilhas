@@ -13,3 +13,7 @@
   height: 100%;
   width: 250px;
 }
+
+.navbar-dark.bg-dark {
+  background-color: #384654 !important;
+}
