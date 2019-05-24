@@ -73,53 +73,51 @@ function App() {
               <p>Insira, para todos os meses*, o número de vendas do último ano.</p>
               <form>
                 <div className="form-row">
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Jan</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Fev</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Mar</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Abr</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Mai</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Jun</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                </div>
-                <div className="form-row">
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Jul</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Ago</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Set</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Out</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Nov</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
-                  <div className="form-group col-sm-2">
+                  <div className="form-group col-sm-1">
                     <label for="#">Dez</label>
                     <input type="number" className="form-control" id="#" placeholder="0" />
                   </div>
@@ -222,14 +220,14 @@ function App() {
                     <h4 className="pb-3">Receita</h4>
                     <form className="mb-n3">
                       <div class="form-group row">
-                        <label for="inputRec3" class="col-sm-7 col-form-label">Número de vendas da empresa</label>
-                        <div class="col-sm-5">
+                        <label for="inputRec3" class="col-sm-8 col-form-label">Número de vendas da empresa</label>
+                        <div class="col-sm-4">
                           <input type="text" class="form-control text-right" id="inputRec3" placeholder="0" />
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputRec45" class="col-sm-7 col-form-label">Preço médio por venda</label>
-                        <div class="col-sm-5">
+                        <label for="inputRec45" class="col-sm-8 col-form-label">Preço médio por venda</label>
+                        <div class="col-sm-4">
                           <div class="input-group">
                             <div class="input-group-prepend">
                               <div class="input-group-text">R$</div>
@@ -241,26 +239,124 @@ function App() {
                     </form>
                   </div>
                 </div>
-              </div>
-              <div className="col-12 col-xl-6">
+
                 <div className="card shadow">
                   <div className="card-body">
                     <h4 className="pb-3">Despesa</h4>
+                    <form className="mb-n3">
+                      <div class="form-group row">
+                        <label for="inputRec45" class="col-sm-8 col-form-label">Custo total com vendas e comissão</label>
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">R$</div>
+                            </div>
+                            <input type="text" class="form-control text-right" id="inputRec45" placeholder="0,00" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputRec45" class="col-sm-8 col-form-label">Custo total de materia prima / P&D</label>
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">R$</div>
+                            </div>
+                            <input type="text" class="form-control text-right" id="inputRec45" placeholder="0,00" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputRec45" class="col-sm-8 col-form-label">Custo de Atendimento e Administração / Operação / Manutenção</label>
+                        <div class="col-sm-4">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">R$</div>
+                            </div>
+                            <input type="text" class="form-control text-right" id="inputRec45" placeholder="0,00" />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
+
+
+
+              </div>
+
+              <div className="col-12 col-xl-6">
+
+                <div className="card shadow">
+                  <div className="card-body">
+                    <form className="mb-n3">
+                      <div className="form-group row mb-0">
+                        <label for="inputRec45" className="col-sm-8 col-form-label">
+                          Quanto da margem (em R$) você vai disponibizar para Marketing?
+                        </label>
+                        <div className="col-sm-4">
+                          <div className="input-group">
+                            <div className="input-group-prepend">
+                              <div className="input-group-text">R$</div>
+                            </div>
+                            <input type="text" class="form-control text-right" id="inputRec45" placeholder="0,00" />
+                          </div>
+                        </div>
+                      </div>
+                      <p className="small text-muted">Para ajudar nessa decisão, veja quanto tem investido hoje.</p>
+                      <div className="form-group row">
+                        <label for="inputRec45" className="col-sm-8 col-form-label">Investimento em Marketing no período</label>
+                        <div className="col-sm-4">
+                          <div className="input-group">
+                            <div className="input-group-prepend">
+                              <div className="input-group-text">R$</div>
+                            </div>
+                            <input type="text" class="form-control text-right" id="inputRec45" placeholder="0,00" />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div className="card card-bg-gradient shadow">
+                  <div className="card-body">
+                    <h6 class="mb-2">
+                      Margem por venda antes do Marketing
+                    </h6>
+                    <span class="h2 mb-0">
+                      R$ 7.630,05
+                    </span>
+
+                  </div>
+                </div>
+
+                <div className="card card-bg-gradient shadow">
+                  <div className="card-body">
+                    <h6 class="mb-2">
+                      Quanto você investe de Marketing por venda
+                    </h6>
+                    <span class="h2 mb-0">
+                      R$ 30,05
+                    </span>
+                  </div>
+                </div>
+
               </div>
             </div>
+
+
+            <h2 className="mt-5 mb-3 mx-0 p-0">
+              <span className="number-title number-title-3">3</span> Orçamento para Marketing
+            </h2>
+            <p className="px-2 pb-3">
+              Esta parte só vai funcionar se você tiver preenchido as abas de "Cálculo de margem" e "Metas e crescimento esperados"
+            </p>
 
             <div className="card shadow">
               <div className="card-body">
               </div>
             </div>
-
-            // area 3
-
-            <h2 className="mt-5 mb-3 mx-0 p-0">
-              <span className="number-title number-title-3">3</span> Orçamento para Marketing
-            </h2>
 
             <div className="card shadow">
               <div className="card-body">
